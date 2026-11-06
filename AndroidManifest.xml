@@ -1,0 +1,10 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.orz.ridecompare" android:versionCode="14" android:versionName="0.14">
+<uses-sdk android:minSdkVersion="32" android:targetSdkVersion="35"/>
+<uses-permission android:name="android.permission.INTERNET"/>
+<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+<queries><package android:name="com.ubercab"/><package android:name="me.lyft.android"/><package android:name="com.google.android.apps.maps"/></queries>
+<application android:label="Ride Compare" android:theme="@style/AppTheme" android:icon="@drawable/icon" android:allowBackup="false" android:supportsRtl="true" android:usesCleartextTraffic="false">
+<activity android:name=".MainActivity" android:exported="true" android:launchMode="singleTop" android:resizeableActivity="true" android:windowSoftInputMode="adjustResize|stateHidden" android:configChanges="screenSize|smallestScreenSize|screenLayout|orientation">
+<intent-filter><action android:name="android.intent.action.MAIN"/><category android:name="android.intent.category.LAUNCHER"/></intent-filter>
+<intent-filter><action android:name="android.intent.action.SEND"/><category android:name="android.intent.category.DEFAULT"/><data android:mimeType="text/plain"/><data android:mimeType="text/uri-list"/></intent-filter></activity></application></manifest>
